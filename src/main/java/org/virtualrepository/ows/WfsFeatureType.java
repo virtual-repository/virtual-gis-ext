@@ -1,6 +1,7 @@
 package org.virtualrepository.ows;
 
 import org.virtualrepository.Property;
+import org.virtualrepository.RepositoryService;
 import org.virtualrepository.comet.CometAsset;
 import org.virtualrepository.impl.AbstractAsset;
 import org.virtualrepository.impl.AbstractType;
@@ -14,6 +15,12 @@ public class WfsFeatureType extends AbstractAsset {
 	public <T extends CometAsset> WfsFeatureType(String id, String name, Property ... properties) {
 		
 		super(type,id,name,properties);
+
+	}
+	
+	public <T extends CometAsset> WfsFeatureType(String id, String name, RepositoryService service, Property ... properties) {
+		
+		super(type,id,name,service, properties);
 
 	}
 	
