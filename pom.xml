@@ -6,21 +6,22 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>GIS Virtual Extensions </name>
 	<description>GIS Extensions for the Virtual Repository</description>
+	<url>https://github.com/virtual-repository/virtual-gis-ext</url>
 
 	<repositories>
 
-     <repository>
-      <id>gcube-snapshots</id>
-      <name>gCube Snapshots</name>
-      <url>http://maven.research-infrastructures.eu/nexus/content/repositories/gcube-snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  
+		<repository>
+			<id>gcube-snapshots</id>
+			<name>gCube Snapshots</name>
+			<url>http://maven.research-infrastructures.eu/nexus/content/repositories/gcube-snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+
 		<repository>
 			<id>geotoolkit</id>
 			<name>Geotk repository</name>
@@ -31,22 +32,22 @@
 		</repository>
 
 	</repositories>
-	
+
 	<distributionManagement>
-    <snapshotRepository>
-      <id>gcube-snapshots</id>
-      <url>http://maven.research-infrastructures.eu/nexus/content/repositories/gcube-snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
+		<snapshotRepository>
+			<id>gcube-snapshots</id>
+			<url>http://maven.research-infrastructures.eu/nexus/content/repositories/gcube-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 
-    	<dependency>
+		<dependency>
 			<groupId>org.opengis</groupId>
 			<artifactId>geoapi-pending</artifactId>
 			<version>4.0-SNAPSHOT</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.virtualrepository</groupId>
 			<artifactId>virtual-repository</artifactId>
