@@ -25,6 +25,9 @@
 			<id>geotoolkit</id>
 			<name>Geotk repository</name>
 			<url>http://maven.geotoolkit.org</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 
 	</repositories>
@@ -38,10 +41,10 @@
 
 	<dependencies>
 
-    <dependency>
+    	<dependency>
 			<groupId>org.opengis</groupId>
 			<artifactId>geoapi-pending</artifactId>
-			<version>4.0-M01</version>
+			<version>4.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
