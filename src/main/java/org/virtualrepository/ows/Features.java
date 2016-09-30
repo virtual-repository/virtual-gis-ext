@@ -7,6 +7,13 @@ import java.util.List;
 
 import org.opengis.feature.Feature;
 
+/**
+ * A iterable object implementing the standard and official OGC
+ * GeoAPI Feature interface
+ * 
+ * @author eblondel
+ *
+ */
 public class Features implements Iterable<Feature> {
 
 	private final List<Feature> features;

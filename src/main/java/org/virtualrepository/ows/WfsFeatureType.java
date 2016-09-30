@@ -7,6 +7,12 @@ import org.virtualrepository.impl.AbstractAsset;
 import org.virtualrepository.impl.AbstractType;
 import org.virtualrepository.impl.Type;
 
+/**
+ * A Virtual-repository WFS FeatureType asset definition
+ * 
+ * @author fabiosimeoni
+ *
+ */
 public class WfsFeatureType extends AbstractAsset {
 	
 	public static final Type<WfsFeatureType> type = new AbstractType<WfsFeatureType>( "wfs/feature") {};

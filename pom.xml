@@ -5,11 +5,33 @@
 	<artifactId>virtual-gis-ext</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>GIS Virtual Extensions </name>
-	<description>GIS Extensions for the Virtual Repository</description>
+	<description>GIS Extensions for the Virtual Repository, based on the official OGC GeoAPI interface</description>
 	<url>https://github.com/virtual-repository/virtual-gis-ext</url>
 
-	<repositories>
+	<developers>
+		<developer>
+			<id>fabiosimeoni</id>
+			<name>Fabio Simeoni</name>
+			<organization>Food and Agriculture Organization</organization>
+			<organizationUrl>http://www.fao.org</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>eblondel</id>
+			<name>Emmanuel Blondel</name>
+			<organization>Food and Agriculture Organization - Fisheries and Aquaculture Department</organization>
+			<organizationUrl>http://www.fao.org/fishery</organizationUrl>
+			<roles>
+				<role>GIS expert</role>
+				<role>developer</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
 
+	<repositories>
 		<repository>
 			<id>gcube-snapshots</id>
 			<name>gCube Snapshots</name>
@@ -21,13 +43,11 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-
 		<repository>
 			<id>geotoolkit</id>
 			<name>Geotk repository</name>
 			<url>http://maven.geotoolkit.org</url>
 		</repository>
-
 	</repositories>
 
 	<distributionManagement>
@@ -38,20 +58,16 @@
 	</distributionManagement>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.opengis</groupId>
 			<artifactId>geoapi-pending</artifactId>
-			<version>4.0-M03</version>
+			<version>4.0-M04</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.virtualrepository</groupId>
 			<artifactId>virtual-repository</artifactId>
 			<version>[1.1.0-SNAPSHOT, 2.0.0-SNAPSHOT)</version>
 		</dependency>
-
-
 	</dependencies>
 
 
